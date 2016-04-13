@@ -4,11 +4,24 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>HTML5本地存储之Web Storage篇</title>
-		<link rel="stylesheet" type="text/css" href="index.css">
+		<!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
 		<script type="text/javascript" src="index.js"></script>
+		<style type="text/css">
+			input{
+				margin:15px 0 5px 20px;
+				padding:5px;
+			}
+			label{
+				width:140px;
+				margin:15px 0 5px 10px;
+				padding:5px;
+
+			}
+		</style>
 	</head>
 
 	<body>
+		<h2 style="margin:15px auto;color:blue">本地存储</h2>
 		<div style="border: 2px dashed #ccc;width:320px;text-align:center;">
 			
 			<label for="user_name">姓名：</label>
@@ -23,7 +36,7 @@
 			<input type="button" onclick="save()" value="新增记录" />
 			<hr/>
 			<label for="search_phone">输入手机号：</label>
-			<input type="text" id="search_phone" name="search_phone" />
+			<input type="text" id="search_phone" name="search_phone" /><br>
 			<input type="button" onclick="find()" value="查找机主" />
 			<p id="find_result"><br/></p>
 		</div>
